@@ -134,9 +134,9 @@
     font-size: 26px; font-weight: 800; line-height: 1; letter-spacing: -.01em;
     color: var(--ink);
     text-shadow: 0 0 10px color-mix(in srgb, var(--cyan) 35%, transparent);
-    /* optical-center nudge: "Rc" has no descenders + 3000 adds weight up top,
-       so geometric centering reads high; +2px drops it to true visual center. */
-    transform: translateY(2px);
+    /* optical-center nudge: all-caps "RC" (no descenders) reads high, and the "01"
+       up top adds weight there — so cheat the symbol down to feel centered. */
+    transform: translateY(4px);
   }
   h1 {
     margin: 0;
@@ -176,8 +176,9 @@
   }
   .vibe .w1 { color: var(--magenta); font-weight: 800; }
   .vibe .w2 { color: var(--purple);  font-weight: 800; }
-  .vibe .w3 { color: var(--blue);    font-weight: 800; }
-  .vibe .w4 { color: var(--cyan);    font-weight: 800; }
+  .vibe .w3 { color: var(--indigo);  font-weight: 800; }
+  .vibe .w4 { color: var(--blue);    font-weight: 800; }
+  .vibe .w5 { color: var(--cyan);    font-weight: 800; }
   .vibe strong { color: var(--ink); font-weight: 800; }
 
   /* ── Surfaces directory ── */
@@ -327,7 +328,7 @@
     .card { padding: 20px 18px 18px 22px; }
     .el-tile { width: 50px; height: 56px; top: -15px; right: -15px; }
     .el-num { font-size: 8.5px; top: 5px; left: 6px; }
-    .el-sym { font-size: 22px; transform: translateY(1.5px); }
+    .el-sym { font-size: 22px; transform: translateY(3px); }
   }
   @media (hover: none) {
     .card:hover, .card:active { transform: none; }
@@ -373,10 +374,10 @@
   </div>
   <p class="tagline">Build · Race · Bash · Crawl</p>
 
-  <p class="vibe">We are Y3K RC — <span class="w1">building</span>,
-    <span class="w2">racing</span>, <span class="w3">bashing</span>, and
-    <span class="w4">crawling</span> scale machines across land, water, and air
-    (cars, trucks, boats, helis, tanks).</p>
+  <p class="vibe">Radio Control + Technology : <span class="w1">custom-building</span>,
+    <span class="w2">racing</span>, <span class="w3">bashing</span>,
+    <span class="w4">crawling</span>, and <span class="w5">flying</span>.
+    If it moves, we can mod it.</p>
 
   <div class="surfaces-label">Surfaces</div>
 
