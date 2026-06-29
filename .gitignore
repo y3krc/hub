@@ -1,1 +1,7 @@
 .DS_Store
+
+# radiomaster/ is a nested, independent repo (y3krc/radiomaster) — its own remote
+# and its own subdomain (radiomaster.y3krc.com), deployed separately. Ignore it so
+# it never enters this hub's history; kept visible (not a dot-hidden cache) because
+# it's real hand-authored content served on its own.
+radiomaster/
