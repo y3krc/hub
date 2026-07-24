@@ -5,3 +5,10 @@
 # it never enters this hub's history; kept visible (not a dot-hidden cache) because
 # it's real hand-authored content served on its own.
 radiomaster/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
